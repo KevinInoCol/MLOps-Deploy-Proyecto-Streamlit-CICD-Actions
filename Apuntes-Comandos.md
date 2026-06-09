@@ -4,7 +4,7 @@
 gcloud init
 
 ## Paso 2: Creación del repositorio en Artifact Registry (GCP)
-gcloud artifacts repositories create repositorio-mlops-streamlit-ml --repository-format docker --project datapath-kevin-inofuentecolque --location us-central1
+gcloud artifacts repositories create repositorio-mlops-streamlit-ml --repository-format docker --project datapath-mlops-kevin-inofuente --location us-central1
 
 ## Paso 3: Crear el repositorio de github
 
@@ -35,4 +35,3 @@ rm -rf /ws/code/.git
 - git add .
 - git commit -m "Ajustes en workflow de CI/CD"
 - git push
-
