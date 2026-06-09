@@ -33,5 +33,5 @@ rm -rf /ws/code/.git
 ## Cuando deseas volver a subir por algun error corres lo siguiente:
 - git status
 - git add .
-- git commit -m "Ajustes en workflow de CI/CD"
+- git commit -m "Ajustes en workflow de CI/CD 2"
 - git push

@@ -2,7 +2,7 @@ name: Deploy to Cloud Run
 
 env:
   SERVICE_NAME: servicio-streamlit-kevin-inofuente-colque
-  PROJECT_ID: datapath-kevin-inofuentecolque
+  PROJECT_ID: datapath-mlops-kevin-inofuente
   DOCKER_IMAGE_URL: us-central1-docker.pkg.dev/datapath-mlops-kevin-inofuente/repositorio-mlops-streamlit-ml/imagen-deploy-streamlit-cicd
 
 on:
