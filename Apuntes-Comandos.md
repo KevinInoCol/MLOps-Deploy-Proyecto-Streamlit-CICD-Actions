@@ -1,0 +1,38 @@
+## Paso 0: Entra al Container con "DevContainer: Reopen in Container"
+
+## Paso 1: Vinculación
+gcloud init
+
+## Paso 2: Creación del repositorio en Artifact Registry (GCP)
+gcloud artifacts repositories create repositorio-mlops-streamlit-ml --repository-format docker --project datapath-kevin-inofuentecolque --location us-central1
+
+## Paso 3: Crear el repositorio de github
+
+## Paso 4: Crear la Key de la Cuenta de Servicio en "IAM y Administración"
+
+## Paso 5: Colocar el Service Account Key en GitHub Settings
+- Debes ir a "Secrets and variables"
+- Luego a "Actions"
+- Clic en "New repository secret"
+- El nombre del Secreto es "GCP_SERVICE_ACCOUNT_KEY"
+- En la caja de abajo copia y pega todo lo que está dentro de la Clave JSON que descargaste de la cuenta de servicio.
+
+## Paso 6 - 1 Primer commit en tu Repo, Automatizacion:
+- git init
+- git add .
+- git commit -m "Proyecto de automatización de despliegue en GCR"
+- git branch -M main
+- git rm --cached datapath-mlops-kevin-inofuente-5ada27491a6f.json
+- echo "datapath-mlops-kevin-inofuente-5ada27491a6f.json" >> .gitignore
+- git remote add origin https://github.com/KevinInoCol/MLOps-Deploy-Proyecto-Streamlit-CICD-Actions.git
+- git push -u origin main
+## Paso 6 - 2 Automatizando nuevamente:
+rm -rf /ws/code/.git
+
+
+## Cuando deseas volver a subir por algun error corres lo siguiente:
+- git status
+- git add .
+- git commit -m "Ajustes en workflow de CI/CD"
+- git push
+
