@@ -47,4 +47,4 @@ jobs:
             --platform managed \
             --region us-central1 \
             --allow-unauthenticated \
-            --service-account=streamlit-runtime@datapath-kevin-inofuente.iam.gserviceaccount.com
+            --service-account=proyecto-mlops-regresion-casas@datapath-mlops-kevin-inofuente.iam.gserviceaccount.com
